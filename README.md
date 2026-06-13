@@ -1,6 +1,6 @@
 # Fluento
 
-A full-stack **language exchange** platform where learners find partners by native/learning language, send friend requests, chat via Stream, and start video calls. Chat and video are communication tools built around language learning — not a standalone chat app.
+A full-stack **language exchange** platform where learners find partners by native/learning language, send friend requests, chat via Stream, and start video calls. Chat and video are communication tools built around language learning — not a standalone chat app.(like messenger)
 
 JWT cookie authentication, MongoDB, and Stream Chat/Video integration.
 
