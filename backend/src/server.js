@@ -31,16 +31,9 @@ app.use("/api/users", userRoutes);
 app.use("/api/chat", chatRoutes);
 
 // Serve frontend in production
-if (process.env.NODE_ENV === "production") {
-  const frontendPath = path.join(__dirname, "../frontend/dist");
-
-  app.use(express.static(frontendPath));
-
-  // Catch-all route for React/Vite SPA
-  app.use((req, res) => {
-    res.sendFile(path.join(frontendPath, "index.html"));
-  });
-}
+app.get("/", (req, res) => {
+  res.send("Fluento Backend API is running smoothly!");
+});
 
 connectDB()
   .then(() => {
